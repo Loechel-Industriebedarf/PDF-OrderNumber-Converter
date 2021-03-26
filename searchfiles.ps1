@@ -1,0 +1,1 @@
+get-childitem -Recurse -path "\\server-03\Papierkorb" | where {($_ -like '*b44b42acb193412b83c0846999b9041a*')} | move-item -Destination "C:\xampp\htdocs\PDF-OrderNumber-Converter\pdf\"
